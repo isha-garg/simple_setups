@@ -1,0 +1,11 @@
+cd Train
+rm -rf *
+for name in `cat /home/super/ISHA/Deep_Learning/Caffe/Caltech/256_sc/list`; do 
+  mkdir $name    
+  cd $name
+  for count in `cat /home/super/ISHA/Deep_Learning/Caffe/Caltech/256_sc/imagecount`; do
+    cp -rf /home/super/ISHA/Deep_Learning/Caffe/Caltech/256_sc/256_ObjectCategories/${name}/*${count} .
+  done
+  cd ..
+done
+

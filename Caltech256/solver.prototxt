@@ -1,0 +1,14 @@
+net: "models/caltech_isha/256/train_val.prototxt"
+test_iter: 52
+test_interval: 100
+base_lr: 0.01
+lr_policy: "step"
+gamma: 0.1
+stepsize: 10000
+display: 50
+max_iter: 20000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 5000
+snapshot_prefix: "models/caltech_isha/256/caltech256_big"
+solver_mode: GPU
