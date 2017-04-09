@@ -1,0 +1,14 @@
+net: "try_tinyimagenet/model//train_val.prototxt"
+test_iter: 200
+test_interval: 500
+base_lr: 0.01
+lr_policy: "step"
+gamma: 0.1
+stepsize: 10000
+display: 20
+max_iter: 100000
+momentum: 0.9
+weight_decay: 0.005
+snapshot: 10000
+snapshot_prefix: "try_tinyimagenet/model/tiny_imagenet1"
+solver_mode: GPU
