@@ -1,0 +1,8 @@
+for name in `cat list`; do 
+  mkdir $name    
+  cd $name
+  mv ../../untar/$name.tar .
+  tar -xf $name.tar
+  cd ..
+done
+
