@@ -1,0 +1,6 @@
+i=0
+for name in `cat list`; do 
+sed -i "s/${name}/${i}/g" val_copy.txt
+((i++))
+done
+

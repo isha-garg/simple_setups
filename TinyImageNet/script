@@ -1,0 +1,8 @@
+i=0
+for name in `cat list`; do 
+  for count in `cat imagecount`; do
+    echo $name/images/${name}_$count $i
+  done
+((i++))
+done
+
