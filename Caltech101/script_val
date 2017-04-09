@@ -1,0 +1,7 @@
+cd Val 
+for name in `cat /home/super/ISHA/Deep_Learning/Caffe/Caltech/list`; do 
+  for count in `cat /home/super/ISHA/Deep_Learning/Caffe/Caltech/imagecount2`; do
+    cp -rf /home/super/ISHA/Deep_Learning/Caffe/Caltech/101_ObjectCategories/${name}/${count} ./${name}_${count}
+  done
+done
+
